@@ -30,8 +30,8 @@ I want to be able to log in
 	And I should be on the main quoting page
 
 
-* Scenario: Signing in with correct credentials
-*	Given I am at the front page of the Quoting System
+	Scenario: Signing in with correct credentials
+	Given I am at the front page of the Quoting System
 	When I click on the ‘Sign in with IS ID’ button
 	And I am directed to the ‘Log In’ page
 	And I enter my username
