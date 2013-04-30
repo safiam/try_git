@@ -5,30 +5,30 @@ Below is a list of the functional requirements for the first release of the proj
 
 Scope
 
-Create a quote for the EIA product for a new client online
+Create a quote for the EIA product for a new client online   
 
 
-1. User login with AD details
+1. User login with AD details   
 
-1.1. Feature: Logging in and roles
-	In order to work with the quoting system
-	as a user of the system
-	I want to be able to log in
+1.1. Feature: Logging in and roles  
+	In order to work with the quoting system  
+	as a user of the system  
+	I want to be able to log in  
 
-1.1.1. Scenario: Signing in with correct credentials
-*Given I am at the front page of the Quoting System
-*When I click on the ‘Sign in with IS ID’ button
-*And I am directed to the ‘Log In’ page
-*And I enter my username
-*And I enter my correct password
-*And I select ‘Auth Provider’ as ‘Fake IS Staff’
-*Then I should be logged in successfully
-*And I should be on the main quoting page
+1.1.1. Scenario: Signing in with correct credentials  
+Given I am at the front page of the Quoting System  
+When I click on the ‘Sign in with IS ID’ button  
+And I am directed to the ‘Log In’ page  
+And I enter my username  
+And I enter my correct password  
+And I select ‘Auth Provider’ as ‘Fake IS Staff’  
+Then I should be logged in successfully  
+And I should be on the main quoting page  
 
-1.1.2. Scenario: Signing in as a BDC
-Given my name is ‘Paul Nixon’
-When I log in successfully
-Then my username drop-down ‘Roles’ list should contain ‘BDC’
+1.1.2. Scenario: Signing in as a BDC  
+Given my name is ‘Paul Nixon’  
+When I log in successfully  
+Then my username drop-down ‘Roles’ list should contain ‘BDC’  
 
 1.1.3. Scenario: Signing in as an AM
 Given my name is ‘Viksha Rajcoomar’
