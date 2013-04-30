@@ -16,14 +16,14 @@ Create a quote for the EIA product for a new client online
 	I want to be able to log in
 
 1.1.1. Scenario: Signing in with correct credentials
-Given I am at the front page of the Quoting System
-When I click on the ‘Sign in with IS ID’ button
-And I am directed to the ‘Log In’ page
-And I enter my username
-And I enter my correct password
-And I select ‘Auth Provider’ as ‘Fake IS Staff’
-Then I should be logged in successfully
-And I should be on the main quoting page
+*Given I am at the front page of the Quoting System
+*When I click on the ‘Sign in with IS ID’ button
+*And I am directed to the ‘Log In’ page
+*And I enter my username
+*And I enter my correct password
+*And I select ‘Auth Provider’ as ‘Fake IS Staff’
+*Then I should be logged in successfully
+*And I should be on the main quoting page
 
 1.1.2. Scenario: Signing in as a BDC
 Given my name is ‘Paul Nixon’
