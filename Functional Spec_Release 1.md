@@ -4,15 +4,17 @@ A web based sales tool is required to enable the IS sales organisation to produc
 Below is a list of the functional requirements for the first release of the project.
 
 Scope
+
 Create a quote for the EIA product for a new client online
 
-<br></br>
 
 1. User login with AD details
 
 1.1. Feature: Logging in and roles
 In order to work with the quoting system
+
 as a user of the system
+
 I want to be able to log in
 
 1.1.1. Scenario: Signing in with correct credentials
