@@ -1,10 +1,12 @@
-Functional Requirements
+##Functional Requirements
 
 A web based sales tool is required to enable the IS sales organisation to produce a quote in a standardised and consistent manner. 
 Below is a list of the functional requirements for the first release of the project.
 
 Scope
 Create a quote for the EIA product for a new client online
+
+<br></br>
 
 1. User login with AD details
 
