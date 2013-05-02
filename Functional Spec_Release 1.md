@@ -49,34 +49,34 @@ as an AM, BDC or IPM
 I want to see avatars of all the role players  
 
 ##### 2.1.1. Scenario: BDC’s avatar  
-Given my role is an ‘AM’  
-And I’ve logged in successfully  
-When I click on ‘New quote’ link  
-And then I click on the ‘Add BDC’ link  
-Then I should see a drop down of available BDCs  
-
-Given there are a list of BDC’s to select  
-When I select ‘Paul Nixon’  
-And click ‘OK’  
-Then I should see an avatar of ‘Paul Nixon’    
+> Given my role is an ‘AM’  
+> And I’ve logged in successfully  
+> When I click on ‘New quote’ link  
+> And then I click on the ‘Add BDC’ link  
+> Then I should see a drop down of available BDCs
+  
+> Given there are a list of BDC’s to select  
+> When I select ‘Paul Nixon’  
+> And click ‘OK’  
+> Then I should see an avatar of ‘Paul Nixon’    
 
 ##### 2.1.2. Scenario: AM’s avatar  
-Given my role is a ‘BDC’  
-And I’ve logged in successfully  
-When I click on ‘New quote’ link  
-And then I click on the ‘Add AM’ link  
-Then I should see a drop down of available AMs  
+> Given my role is a ‘BDC’  
+> And I’ve logged in successfully  
+> When I click on ‘New quote’ link  
+> And then I click on the ‘Add AM’ link  
+> Then I should see a drop down of available AMs  
 
-Given there are a list of AM’s to select  
-When I select ‘Viksha Rajcoomar’  
-And click ‘OK’  
-Then I should see an avatar of ‘Viksha Rajcoomar’     
+> > Given there are a list of AM’s to select  
+> > When I select ‘Viksha Rajcoomar’  
+> > And click ‘OK’  
+> > Then I should see an avatar of ‘Viksha Rajcoomar’     
 
-Given I am an AM (x)  
-And there is a quote (q) owned by AM (y)  
-When I click on a link to view quote (q)  
-Then AM (y) must still be the AM of that quote  
-And AM (x) should not be the AM  
+> > > Given I am an AM (x)  
+> > > And there is a quote (q) owned by AM (y)  
+> > > When I click on a link to view quote (q)  
+> > > Then AM (y) must still be the AM of that quote  
+> > > And AM (x) should not be the AM  
 
 ##### 2.1.3. Scenario: IPM’s avatar  
 Given my role is an ‘AM’  
