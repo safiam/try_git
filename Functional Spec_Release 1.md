@@ -79,11 +79,11 @@ I want to see avatars of all the role players
 > > > And AM (x) should not be the AM  
 
 ##### 2.1.3. Scenario: IPM’s avatar  
-Given my role is an ‘AM’  
-And I’ve logged in successfully  
-When I click on ‘New quote’ link  
-And then I click on the ‘Add IPM’ link  
-Then I should see a drop down of available IPMs  
+> Given my role is an ‘AM’  
+> And I’ve logged in successfully  
+> When I click on ‘New quote’ link  
+> And then I click on the ‘Add IPM’ link  
+> Then I should see a drop down of available IPMs  
 
 Given there are a list of IPM’s to select  
 When I select ‘Alison Mack’  
