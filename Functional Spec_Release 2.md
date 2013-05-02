@@ -151,7 +151,7 @@ I want to be able to accept/reject a quote awaiting approval
 
 ##### 5.1.1. Scenario: Uploading a document onto Knowzone    
 > Given I am on the ‘Home’ page    
-> And I click on the ‘view’ button of a ‘Finalized’ or ‘Accepted’ quote    
+> And I click on the ‘View’ button of a ‘Finalized’ or ‘Accepted’ quote    
 > And I am directed to the ‘Viewing Quote #number’ page    
 > And I click on a quote in my ‘Basket’     
 > When I click the ‘Upload to KnowZone’ button    
