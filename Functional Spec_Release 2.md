@@ -60,66 +60,66 @@ I want to be able to create a proposal specific to my client’s needs
 > > And I click the ‘print PDF’ button   
 > > Then the quote content and executive summary should be displayed in a PDF viewer    
 
-##### Scenario: View basket as a pricing table   
-> > Given I am on the ‘Home’ page   
-> > And I click on the ‘view’ button of a specific quote   
-> > And I see ‘Viewing Quote #number’ page   
-> > When I click the ‘View Basket as a Pricing Table’ button in my Basket   
-> > Then my ‘Basket’ contents should be converted to HTML format    
-> > And I should be able to copy this information   
+##### 2.1.6. Scenario: View basket as a pricing table   
+> Given I am on the ‘Home’ page   
+> And I click on the ‘view’ button of a specific quote   
+> And I see ‘Viewing Quote #number’ page   
+> When I click the ‘View Basket as a Pricing Table’ button in my Basket   
+> Then my ‘Basket’ contents should be converted to HTML format    
+> And I should be able to copy this information   
 
 ### 3. Discount Approvals
 
-> As per Feature 5.1, 5.2 and 14.2 of Functional Spec R1
+> As per Feature 5.1, 5.2 and 14.2 of Functional Spec R1   
 
-### 4. Acceptance/Rejecting a quote
+### 4. Acceptance/Rejecting a quote    
 
-#### 4.1. Feature: BDC accepting/rejecting the quote 
-In order to progress the quote process
-as a BDC
-I want to be able to accept/reject a quote awaiting approval 
+#### 4.1. Feature: BDC accepting/rejecting the quote    
+In order to progress the quote process   
+as a BDC   
+I want to be able to accept/reject a quote awaiting approval    
 
-##### 4.1.1. Scenario: Accepting a quote
-> Given I am a BDC 
-> And I am on the ‘Home’ page 
-> And I click a quote under ‘Awaiting approval’
-> And I am directed to the ‘Viewing Quote #number’ page
-> And I am satisfied with the quote content
-> When I click the ‘Accept on behalf of client’ button
-> Then the quote status should change to ‘Accepted’
+##### 4.1.1. Scenario: Accepting a quote   
+> Given I am a BDC    
+> And I am on the ‘Home’ page       
+> And I click a quote under ‘Awaiting approval’   
+> And I am directed to the ‘Viewing Quote #number’ page   
+> And I am satisfied with the quote content   
+> When I click the ‘Accept on behalf of client’ button   
+> Then the quote status should change to ‘Accepted’   
 
-##### 4.1.2. Scenario: Accepting a quote with a discount edit
-> Given I am a BDC 
-> And I am viewing a quote configured by an AM
-> And I want to edit the discount the AM has applied
-> When I click the discount bar
-> Then the field should become editable 
-> And I should be able to input a more suitable amount 
+##### 4.1.2. Scenario: Accepting a quote with a discount edit   
+> Given I am a BDC    
+> And I am viewing a quote configured by an AM   
+> And I want to edit the discount the AM has applied   
+> When I click the discount bar   
+> Then the field should become editable    
+> And I should be able to input a more suitable amount    
 
-> > Given I have viewed the AM’s quote 
-> > And I am satisfied with the end product
-> > When I click the ‘Accept on behalf of client’ button
-> > Then the quote status should change to ‘Accepted’ 
+> > Given I have viewed the AM’s quote    
+> > And I am satisfied with the end product   
+> > When I click the ‘Accept on behalf of client’ button   
+> > Then the quote status should change to ‘Accepted’    
 
-##### 4.1.3. Scenario: Rejecting a quote
-> Given I am a BDC 
-> And I am on the ‘Home’ page 
-> And I click a quote under ‘Awaiting approval’
-> And I am directed to the ‘Viewing Quote #number’ page
-> And I do not approve the discount the AM has applied
-> When I click the ‘Reject’ button
-> Then the quote status should change to ‘Rejected’
+##### 4.1.3. Scenario: Rejecting a quote   
+> Given I am a BDC    
+> And I am on the ‘Home’ page    
+> And I click a quote under ‘Awaiting approval’   
+> And I am directed to the ‘Viewing Quote #number’ page   
+> And I do not approve the discount the AM has applied   
+> When I click the ‘Reject’ button   
+> Then the quote status should change to ‘Rejected’   
 
-> > Given I have clicked the ‘Reject’ button	
-> > And a dialogue box appears
-> > And it reads, ‘Reason for rejecting this quote’
-> > When I type in the reason for reject
-> > And I click ‘Submit’
-> > Then the quote status should remain ‘Awaiting Approval’  
+> > Given I have clicked the ‘Reject’ button	   
+> > And a dialogue box appears   
+> > And it reads, ‘Reason for rejecting this quote’   
+> > When I type in the reason for reject   
+> > And I click ‘Submit’   
+> > Then the quote status should remain ‘Awaiting Approval’     
 
-##### 4.1.4. Scenario: User receives the accepted/rejected notification 
-> Given I am an AM
-> And I have submitted a quote for approval 
-> When the BDC has accepted/rejected the quote
-> Then I should receive an email notifying me of this 
-
+##### 4.1.4. Scenario: User receives the accepted/rejected notification    
+> Given I am an AM   
+> And I have submitted a quote for approval    
+> When the BDC has accepted/rejected the quote   
+> Then I should receive an email notifying me of this    
+   
