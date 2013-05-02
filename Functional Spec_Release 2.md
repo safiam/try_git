@@ -16,7 +16,7 @@ In order to produce an accurate product
 as an AM/BDC   
 I want to be able to create a proposal specific to my client’s needs   
 
-#####2.1.1. Scenario: Starting an executive summary   
+##### 2.1.1. Scenario: Starting an executive summary   
   
 > Given I am on the ‘Home’ page   
 > When I have chosen a quote to edit from my ‘Saved Quotes’   
@@ -26,19 +26,28 @@ I want to be able to create a proposal specific to my client’s needs
 > >  Given I am on the ‘Editing Quote #number’ page    
 > >  And I have clicked on the ‘Enterprise Internet Access’ product in my ‘Basket’   
 > >  When I click on the ‘Create Executive Summary’ button   
-> >  Then a rich text editor should appear in the same screen     
-> >  And I should be able to enter text in either field below ‘Salutations’   
+> >  Then a rich text editor should appear in the same screen  
+> >  And I should see a non editable field of 'Salutations'
+> >  And I should see two editable text fields below this   
+> >  And I should be able to enter text in either of these field   
 
 ##### 2.1.2 Scenario: Inserting an image    
-> Given I am in the ‘Executive Summary’ editor   
-> And I want to insert a diagram in the field   
+> Given I am on the ‘Executive Summary’ editor   
+> And I want to insert a diagram into the field   
+> When I click on the 'Add diagram' button 
+> And a File Select Dialog Box appears 
+> And I select a file
+> Then the diagram should be attached to the quote 
+> OR     
+> Given I am on the ‘Executive Summary’ editor   
+> And I want to insert a diagram into the field   
 > When I have copied the diagram from my doc/other source   
-> And I press the ‘insert diagram’ button / or CTRL-V    
-> Then the diagram should be inserted in the selected field       
+> And I press the ‘Insert diagram’ button / or CTRL-V    
+> Then the diagram should be inserted into the selected field  
 
 ##### 2.1.3. Scenario: Saving an executive summary   
 > Given I am on the ‘Editing Quote #number’ page   
-> And I have successfully created the executive summary   
+> And I have successfully edited the fields 
 > When I click the ‘Save Exec Summary’ button   
 > Then it should be saved and attached to the quote    
 
@@ -60,11 +69,23 @@ I want to be able to create a proposal specific to my client’s needs
 
 ##### 2.1.5. Scenario: View basket as a pricing table   
 > Given I am on the ‘Home’ page   
-> And I click on the ‘view’ button of a specific quote   
-> And I see ‘Viewing Quote #number’ page   
+> And I click on the ‘View’ button of a specific quote   
+> And I am directed to the ‘Viewing Quote #number’ page   
 > When I click the ‘View Basket as a Pricing Table’ button in my Basket   
-> Then my ‘Basket’ contents should be converted to HTML format    
-> And I should be able to copy this information   
+> Then my ‘Basket’ contents should appear in HTML format   
+
+##### 2.1.6. Scenario: Copying pricing table contents
+> Given I have clicked the ‘View Basket as a Pricing Table’ button in my Basket   my 'Basket' 
+> And the contents appear in HTML format 
+> When I highlight the required fields 
+> And I click the 'copy' button
+> Then the highlighted fields should be copied
+> And I should be able to paste them 
+OR 
+> Given  my 'Basket' contents are in HTML format 
+> When I click the 'copy' button 
+> Then the pricing table should be copied
+> And I should be able to paste them 
 
 ### 3. Discount Approvals
 
