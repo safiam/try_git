@@ -57,9 +57,9 @@ I want to be able to create a proposal specific to my client’s needs
 
 > > Given I have clicked the ‘Print’ dropdown on the ‘Viewing Quote #number’ page   
 > > When I click on ‘Proposal’   
-> > Then the quote content and executive summary should be displayed in a PDF viewer    
-
-OR   
+> > Then the quote content and executive summary should be displayed in a PDF viewer   
+   
+> > OR   
 
 > > Given I am on the ‘Home’ page   
 > > When I have chosen a ‘Finalized’ or ‘Accepted’ quote under my ‘Saved quotes’   
