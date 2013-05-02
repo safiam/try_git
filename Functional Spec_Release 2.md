@@ -25,25 +25,25 @@ I want to be able to create a proposal specific to my client’s needs
 
 > >  Given I am on the ‘Editing Quote #number’ page    
 > >  And I have clicked on the ‘Enterprise Internet Access’ product in my ‘Basket’   
-> >  When I click on the ‘Create Executive Summary’ button   
-> >  Then a rich text editor should appear in the same screen  
-> >  And I should see a non editable field of 'Salutations'
+> >  When I click on the ‘Create Executive Summary’ button       
+> >  Then a rich text editor should appear in the same screen     
+> >  And I should see a non editable field of 'Salutations'    
 > >  And I should see two editable text fields below this   
 > >  And I should be able to enter text in either of these field   
-
+  
 ##### 2.1.2 Scenario: Inserting an image    
-> Given I am on the ‘Executive Summary’ editor   
+> Given I am on the ‘Executive Summary’ editor       
 > And I want to insert a diagram into the field   
-> When I click on the 'Add diagram' button 
-> And a File Select Dialog Box appears 
-> And I select a file
-> Then the diagram should be attached to the quote 
-> OR     
-> Given I am on the ‘Executive Summary’ editor   
+> When I click on the 'Add diagram' button    
+> And a File Select Dialog Box appears     
+> And I select a file    
+> Then the diagram should be attached to the quote          
+> OR      
+> Given I am on the ‘Executive Summary’ editor       
 > And I want to insert a diagram into the field   
-> When I have copied the diagram from my doc/other source   
+> When I have copied the diagram from my doc/other source         
 > And I press the ‘Insert diagram’ button / or CTRL-V    
-> Then the diagram should be inserted into the selected field  
+> Then the diagram should be inserted into the selected field         
 
 ##### 2.1.3. Scenario: Saving an executive summary   
 > Given I am on the ‘Editing Quote #number’ page   
@@ -58,7 +58,7 @@ I want to be able to create a proposal specific to my client’s needs
 > When I click the ‘Print’ dropdown   
 > Then I should see a list reading ‘Proposal,’ ‘Additional Services letter,’ ‘Upgrade,’ and ‘Service Schedule.’   
 
-> > Given I have clicked the ‘Print’ dropdown on the ‘Viewing Quote #number’ page   
+> > Given I have clicked the ‘Print’ dropdown on the ‘Viewing Quote #number’ page    
 > > When I click on ‘Proposal’   
 > > Then the quote content and executive summary should be displayed in a PDF viewer   
 > > OR   
@@ -74,18 +74,18 @@ I want to be able to create a proposal specific to my client’s needs
 > When I click the ‘View Basket as a Pricing Table’ button in my Basket   
 > Then my ‘Basket’ contents should appear in HTML format   
 
-##### 2.1.6. Scenario: Copying pricing table contents
-> Given I have clicked the ‘View Basket as a Pricing Table’ button in my Basket   my 'Basket' 
-> And the contents appear in HTML format 
-> When I highlight the required fields 
-> And I click the 'copy' button
-> Then the highlighted fields should be copied
-> And I should be able to paste them   
-> OR    
-> Given  my 'Basket' contents are in HTML format   
-> When I click the 'copy' button 
-> Then the pricing table should be copied
-> And I should be able to paste them 
+##### 2.1.6. Scenario: Copying pricing table contents     
+> Given I have clicked the ‘View Basket as a Pricing Table’ button in my Basket   my 'Basket'      
+> And the contents appear in HTML format    
+> When I highlight the required fields    
+> And I click the 'copy' button    
+> Then the highlighted fields should be copied   
+> And I should be able to paste them    
+> OR     
+> Given  my 'Basket' contents are in HTML format        
+> When I click the 'copy' button    
+> Then the pricing table should be copied       
+> And I should be able to paste them    
 
 ### 3. Discount Approvals
 
