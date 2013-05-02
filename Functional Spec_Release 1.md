@@ -656,7 +656,8 @@ In order to progress the quote process
 as a BDC  
 I want to be notified of quotes awaiting my approval   
 
-##### 14.2.1. Scenario: Receiving a notification of quotes awaiting approval     > Given I am a BDC    
+##### 14.2.1. Scenario: Receiving a notification of quotes awaiting approval 
+> Given I am a BDC    
 > And an AM has configured a quote   
 > And has sent the quote for approval   
 > When I am on my ‘Home’ page   
