@@ -55,10 +55,10 @@ I want to see avatars of all the role players
 > And then I click on the ‘Add BDC’ link  
 > Then I should see a drop down of available BDCs
   
-> Given there are a list of BDC’s to select  
-> When I select ‘Paul Nixon’  
-> And click ‘OK’  
-> Then I should see an avatar of ‘Paul Nixon’    
+> >  Given there are a list of BDC’s to select  
+> >  When I select ‘Paul Nixon’  
+> >  And click ‘OK’  
+> >  Then I should see an avatar of ‘Paul Nixon’    
 
 ##### 2.1.2. Scenario: AM’s avatar  
 > Given my role is a ‘BDC’  
@@ -373,16 +373,16 @@ I want to be able to view quotes
 > And I click the ‘View’ button   
 > Then I should directed to the ‘Viewing Quote #number’ page  
 
-> Given I am on the ‘Viewing Quote #number’ page  
-> When I click ‘Enterprise Internet Access’ from my ‘Basket’  
-> Then I should see ‘Configure Enterprise Internet Access’   
-> And I should see the product breakdown   
-> And I should not be allowed to change any items or discount in this view  
+> > Given I am on the ‘Viewing Quote #number’ page  
+> > When I click ‘Enterprise Internet Access’ from my ‘Basket’  
+> > Then I should see ‘Configure Enterprise Internet Access’   
+> > And I should see the product breakdown   
+> > And I should not be allowed to change any items or discount in this view  
 	
-> Given I am on the ‘Viewing Quote #number’ page   
-> And I have completed viewing the quote  
-> When I click ‘Done Viewing’  
-> Then I should be redirected back to the ‘Home’ page  
+> > > Given I am on the ‘Viewing Quote #number’ page   
+> > > And I have completed viewing the quote  
+> > > When I click ‘Done Viewing’  
+> > > Then I should be redirected back to the ‘Home’ page  
 
 ##### 8.1.2. Scenario: Exporting a quote to PDF  
 > Given I am on the ‘Home’ page  
@@ -424,11 +424,11 @@ I want to be able to search for specific quotes
 > And I click ‘Search’  
 > Then I should see a list of the filtered quotes   
 
-> Given I am on the ‘Home’ page  
-> And I see the ‘Filter field’ just below the ‘Saved Quotes’ header  
-> And I have chosen a specific attribute of the quote to filter  
-> When I enter this into the ‘Filter’ field    
-> Then I should see a list of those quotes  
+> > Given I am on the ‘Home’ page  
+> > And I see the ‘Filter field’ just below the ‘Saved Quotes’ header  
+> > And I have chosen a specific attribute of the quote to filter  
+> > When I enter this into the ‘Filter’ field    
+> > Then I should see a list of those quotes  
 	
 
 ### 11. Filtering quotes based on clients  
@@ -581,15 +581,15 @@ I want to be able to craft templated quotes for reuse
 > When I click on ‘Save template’   
 > Then a dialog box should appear asking me to provide details for the template  
 
-> Given I have clicked on ‘Save template’  
-> And a dialog box appears containing fields for ‘Template Name’ and ‘Description’   
-> And a Yes/No option for where discounts are preapproved  
-> When I enter a Template name and description  
-> And I select Yes/No option for discounts   
+> > Given I have clicked on ‘Save template’  
+> > And a dialog box appears containing fields for ‘Template Name’ and ‘Description’   
+> > And a Yes/No option for where discounts are preapproved  
+> > When I enter a Template name and description  
+> > And I select Yes/No option for discounts   
 > And I click ‘Save this Template’  
-> And  a message box appears stating that ‘Your template has been saved successfully’  
-> And I click 'OK' 
-> Then the template should appear under my product list   
+> > And  a message box appears stating that ‘Your template has been saved successfully’  
+> > And I click 'OK' 
+> > Then the template should appear under my product list   
 	
 #### 13.2. Feature: Configure a template online  
 In order to quote as efficiently as possible  
@@ -644,19 +644,19 @@ I want to be notified of accepted quotes
 > When a quote has been accepted by the client    
 > Then I should receive an email detailing the Client and the number of the accepted quote   
 
-> Given I am logged in as an IPM   
-> And a quote has been accepted by the client  
-> When I receive an email detailing the accepted quote  
-> And I click on the ‘Quote Number’ link  
-> Then the quote should load in the tool  
-> And I should see the ‘Viewing Quote #number’ page  
+> > Given I am logged in as an IPM   
+> > And a quote has been accepted by the client  
+> > When I receive an email detailing the accepted quote  
+> > And I click on the ‘Quote Number’ link  
+> > Then the quote should load in the tool  
+> > And I should see the ‘Viewing Quote #number’ page  
 
-##### 14.2. Feature: Notification of quotes awaiting approval   
+#### 14.2. Feature: Notification of quotes awaiting approval   
 In order to progress the quote process  
 as a BDC  
 I want to be notified of quotes awaiting my approval   
 
-#### 14.2.1. Scenario: Receiving a notification of quotes awaiting approval   > Given I am a BDC    
+##### 14.2.1. Scenario: Receiving a notification of quotes awaiting approval     > Given I am a BDC    
 > And an AM has configured a quote   
 > And has sent the quote for approval   
 > When I am on my ‘Home’ page   
