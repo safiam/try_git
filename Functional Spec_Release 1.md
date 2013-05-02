@@ -18,7 +18,7 @@ I want to be able to log in
 
 ##### 1.1.1. Scenario: Signing in with correct credentials  
 > Given I am at the front page of the Quoting System  
-> When I click on the ‘Sign in with IS ID’ button  
+> When I click on the ‘Sign in with IS ID’ button   
 > And I am directed to the ‘Log In’ page  
 > And I enter my username  
 > And I enter my correct password  
