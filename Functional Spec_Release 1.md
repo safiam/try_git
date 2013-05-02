@@ -17,29 +17,29 @@ as a user of the system
 I want to be able to log in  
 
 ##### 1.1.1. Scenario: Signing in with correct credentials  
-Given I am at the front page of the Quoting System  
-When I click on the ‘Sign in with IS ID’ button  
-And I am directed to the ‘Log In’ page  
-And I enter my username  
-And I enter my correct password  
-And I select ‘Auth Provider’ as ‘Fake IS Staff’  
-Then I should be logged in successfully  
-And I should be on the main quoting page  
+> Given I am at the front page of the Quoting System  
+> When I click on the ‘Sign in with IS ID’ button  
+> And I am directed to the ‘Log In’ page  
+> And I enter my username  
+> And I enter my correct password  
+> And I select ‘Auth Provider’ as ‘Fake IS Staff’  
+> Then I should be logged in successfully  
+> And I should be on the main quoting page  
 
 ##### 1.1.2. Scenario: Signing in as a BDC  
-Given my name is ‘Paul Nixon’  
-When I log in successfully  
-Then my username drop-down ‘Roles’ list should contain ‘BDC’  
+> Given my name is ‘Paul Nixon’  
+> When I log in successfully  
+> Then my username drop-down ‘Roles’ list should contain ‘BDC’  
 
 ##### 1.1.3. Scenario: Signing in as an AM  
-Given my name is ‘Viksha Rajcoomar’  
-When I log in successfully  
-Then my username drop-down ‘Roles’ list should contain ‘AM’  
+> Given my name is ‘Viksha Rajcoomar’  
+> When I log in successfully  
+> Then my username drop-down ‘Roles’ list should contain ‘AM’  
 
 ##### 1.1.4. Scenario: Signing in as an IPM  
-Given my name is ‘Alison Mack’  
-When I log in successfully  
-Then my username drop-down ‘Roles’ list should contain ‘IPM’  
+> Given my name is ‘Alison Mack’  
+> When I log in successfully  
+> Then my username drop-down ‘Roles’ list should contain ‘IPM’  
 
 ### 2. User avatars
 
