@@ -80,9 +80,9 @@ I want to be able to create a proposal specific to my client’s needs
 > When I highlight the required fields 
 > And I click the 'copy' button
 > Then the highlighted fields should be copied
-> And I should be able to paste them 
-OR 
-> Given  my 'Basket' contents are in HTML format 
+> And I should be able to paste them   
+> OR    
+> Given  my 'Basket' contents are in HTML format   
 > When I click the 'copy' button 
 > Then the pricing table should be copied
 > And I should be able to paste them 
