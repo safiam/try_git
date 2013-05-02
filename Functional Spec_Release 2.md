@@ -140,5 +140,22 @@ I want to be able to accept/reject a quote awaiting approval
 > Given I am an AM   
 > And I have submitted a quote for approval    
 > When the BDC has accepted/rejected the quote   
-> Then I should receive an email notifying me of this    
+> Then I should receive an email notifying me of this  
+
+### 5. Sharing documents on Knowzone     
+
+#### 5.1. Feature: Uploading documents to Knowzone    
+> In order to share and increase knowledge of clients amongst IS users    
+> as an AM/BDC    
+> I want to be able to upload documents to the Knowzone    
+
+##### 5.1.1. Scenario: Uploading a document onto Knowzone    
+> Given I am on the ‘Home’ page    
+> And I click on the ‘view’ button of a ‘Finalized’ or ‘Accepted’ quote    
+> And I am directed to the ‘Viewing Quote #number’ page    
+> And I click on a quote in my ‘Basket’     
+> When I click the ‘Upload to KnowZone’ button    
+> Then the document should be uploaded to the Client folder in Knowzone    
+    
+  
    
