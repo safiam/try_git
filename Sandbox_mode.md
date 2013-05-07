@@ -4,7 +4,7 @@ Feature: Launching a new product from Tribold
 
 ##Specs
 
-## 1. 
+### 1. Creating a new product in sandobox mode 
 
 #### Feature: Logging in and roles      
 > In order to work with the quoting system in a sandbox environment      
