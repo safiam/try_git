@@ -1,0 +1,11 @@
+In the New Quote page, there should initially be a button above 'My basket'. This button should say, 'Transform into a deal.' There will be a little i button next to the field which gives an explanation of what a deal is in the context of Alphabet. (calling quoting scenarios sometime)
+
+Once the user has clicked 'Transform,' there should be a message box which appears which says, 'What would you like to call your first basket?' There should be a 'cancel transform', and a 'create transform option.' 
+
+When the user clicks, creat, then it becomes a deal, and cannot be undone. The page will change. The button will disappear, and replacing it should be 'Deal for client x.'
+
+A tab will appear (like chrome) with the basket name. (ie tab and basket should have the same name). There should be a plus button at the end of the tab list, and when the user clicks this, another message box appears which says 'Choose a name for the basket.' 
+
+The Home page also needs to change, when you glance at it you need to be able to distingish between quotes from deals. 
+
+FYI: A deal is just a collection of quotes. It's for the client, so they have options. Currently Alphabet has "players" attached to an individual quote. With the deal, those players are attached to the whole collection. Currently what we call a basket, its just a collection of products that make up a quote. Think of a deal as a collection of baskets. There'll be a product basket, like we have now, and a deal basket. 
